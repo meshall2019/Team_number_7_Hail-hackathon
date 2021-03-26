@@ -1,0 +1,107 @@
+ /*this is for navbar*/
+/*
+ .navbar{
+    
+    position: sticky;
+    top: 0;
+}*/
+.navbar .navbar-brand{
+
+    font-size: 30px;
+}
+/*------------------*/
+ 
+/* This is for login Form */
+
+form{
+    padding: 30px;
+    width: 700px;
+    background-color: #039d90b7;
+    position: relative;
+    border-radius: 15px;
+    top: -450px;
+    left: 350px;
+}
+form *{
+    margin: 10px;
+}
+form h5{
+    text-align: center;
+    color: white;
+}
+form input{
+
+    text-align: center;
+    border-radius: 25px;
+}
+
+form button{
+    margin-left: 250px;
+    position: relative;
+}
+
+form .footer{
+
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #808080;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 2px;
+    background-color: #039d8f;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #808080;
+    border-color: #0c0d0e;
+}
+#enter1,#enter2{
+
+    display: none;
+}
+/*------------------------*/
+
+/* This is for home page */
+.homeData{
+
+    background-color: #039d8f;
+    width: 100%;
+    padding: 150px;
+}
+.homeData *{
+    text-align: center;
+    color: white;
+}
+
+.homeData{
+
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.OurVision{
+    padding: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("img_home.jpg");
+}
+
+
+.ourVideo video{
+    
+    padding-top: 10px;
+    width: 100%;
+    height: 600px;
+
+}
