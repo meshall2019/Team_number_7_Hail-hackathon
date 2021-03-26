@@ -4,7 +4,8 @@ $(document).ready(function(){
 $(".techer").click(function(){
 
 $("h5").text("تسجيل دخول معلم");
-$(".enter1").css("display","block")
+$("#enter1").show()
+$("#enter2").hide()
 
 if($("form").css("top")=="-450px")
     $("form").animate({
@@ -26,7 +27,10 @@ else{
 /* Login form for the student */
 $(".student").click(function(){
 
-    $("h5").text("تسجيل دخول طالب");   
+$("h5").text("تسجيل دخول طالب");   
+$("#enter2").show()
+$("#enter1").hide()
+
 if($("form").css("top")=="-450px")
 $("form").animate({
     
@@ -44,19 +48,11 @@ $("form").animate({
 })
 /*---------------------------- */
 
-$("#techer").click(function(){
-
-
-
-})
-
 names_techer=["محمد","أحمد"]
 names_student=["صالح","خالد"]
 
-$("#enter").click(function(){
+$("#enter1").click(function(){
 
-
-if($("h5").text=="تسجيل دخول معلم"){
     names_techer.forEach(name=> {
         
     if($("#name").val()==name){
@@ -71,10 +67,28 @@ if($("h5").text=="تسجيل دخول معلم"){
     if($("#name").val()==name){
         alert("عفوا الرجاء الدخول من الصفحة المخصصة للطلاب")
     }
-        });
-    }
-   
+        }); 
 })
+
+$("#enter2").click(function(){
+
+        names_student.forEach(name=> {
+            
+        if($("#name").val()==name){
+            alert(" مرحبا  "+name)
+        }
+     
+            });
+    
+    
+         names_techer.forEach(name=> {
+            
+        if($("#name").val()==name){
+            alert("عفوا الرجاء الدخول من الصفحة المخصصة للمعلمين")
+        }
+            });
+       
+    })
 
 
 
